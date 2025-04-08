@@ -1,10 +1,10 @@
-package UNO;
+package uno.logica;
 
 public class Carta {
     //Enumeració
     public enum Color{
-        groc,
-        vermell,
+        Groc,
+        Vermell,
         Blau,
         Verd
         
@@ -24,11 +24,16 @@ public class Carta {
 
     // Agafar numero i color
     public int getNumero() {
+
         return numeroCarta;
     }
 
     public Color getColor() {
+
         return colorCarta;
     }
 
+
 }
+
+

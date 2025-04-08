@@ -1,0 +1,17 @@
+[33mcommit 2db600c8cb467b42a339ab5d0c6da77578886615[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m)[m
+Author: Marc Morera <mmorera124@boscdelacoma.cat>
+Date:   Thu Mar 27 10:24:57 2025 +0100
+
+    Crear tiraCartes Jugador
+
+[33mcommit 0af97db1734ac73c8427b69dac5794996abf3315[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: Marc Morera <mmorera124@boscdelacoma.cat>
+Date:   Tue Mar 11 12:54:55 2025 +0100
+
+    Crea clase Jugador
+
+[33mcommit 804d17d51b49934e24c3ec695d74b4a44987a9ff[m
+Author: Marc Morera <mmorera124@boscdelacoma.cat>
+Date:   Tue Mar 11 12:44:02 2025 +0100
+
+    Crea clase Carta

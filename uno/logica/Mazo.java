@@ -1,4 +1,4 @@
-package UNO;
+package uno.logica;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -26,18 +26,20 @@ public class Mazo {
     public Carta agafarCarta(){
         return cartes.pop();
     }
+
     public void barrejar(){
         Collections.shuffle(cartes);
     }
+
     public void reiniciar(Pilo pilo){
         Carta ultimaCarta;
-        ultimaCarta = pilo.getCartes().pop();
+        ultimaCarta = pilo.agafarCarta();
 
         while (!pilo.getCartes().empty()){
-            cartes.push(pilo.getCartes().pop());
+            cartes.push(pilo.agafarCarta());
         }
 
-        pilo.getCartes().push(ultimaCarta);
+        pilo.addCarta(ultimaCarta);
 
     }
 

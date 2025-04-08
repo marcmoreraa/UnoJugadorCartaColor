@@ -1,6 +1,4 @@
-
-
-package UNO;
+package uno.logica;
 
 import java.util.ArrayList;
 
@@ -29,11 +27,6 @@ public class Jugador {
     public void tirarCartes (Pilo pilo, Carta carta){
         pilo.getCartes().push(carta);
         cartes.remove(carta);
-
     }
-
-
-
-
 
 }
