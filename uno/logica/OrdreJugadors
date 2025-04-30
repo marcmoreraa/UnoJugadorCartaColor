@@ -1,0 +1,49 @@
+package uno.logica;
+import uno.interficie.UI;
+
+import java.util.ArrayList;
+import java.util.Collections;
+
+
+public class OrdreJugadors {
+
+    public ArrayList<String> jugadors;
+    public int JugadorActual;
+
+    public OrdreJugadors() {
+        jugadors = UI.CrearJugador();
+        barrejarOrdre(jugadors);
+        JugadorActual = 0;
+    }
+
+    public String getJugadorActiu() {
+        return jugadors.get(JugadorActual);
+    }
+
+    public void passarTorn() {
+        if (JugadorActual < jugadors.size() - 1) {
+            JugadorActual++;
+        } else {
+            JugadorActual = 0;
+        }
+    }
+
+    public static void barrejarOrdre(ArrayList<String> jugadors) {
+        Collections.shuffle(jugadors);
+    }
+
+
+
+
+    public ArrayList<Jugador> crearJugadors() {
+        ArrayList<Jugador> jugadorsCreats = new ArrayList<>();
+
+        for (int i = 0; i < jugadors.size(); i++) {
+            String nom = jugadors.get(i);
+            Jugador jugadorCreat = new Jugador(nom);
+            jugadorsCreats.add(jugadorCreat);
+        }
+
+        return jugadorsCreats;
+    }
+}
